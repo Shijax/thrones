@@ -1,0 +1,1 @@
+import {calculate} from './components/calculator.js';
