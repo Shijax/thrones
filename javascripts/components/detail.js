@@ -5,7 +5,7 @@ const detailsBuilder = (character) => {
     domString += `<div class="col-6 offset-md-3">`;
     domString += `<div class="row">`;
     domString += `<div class="col">`;
-    domString += `<img src="${character.imageUrl}" alt="${character.name}"/>`;
+    domString += `<img src="${character.imgUrl}" alt="${character.name}"/>`;
     domString += `</div>`;
     domString += `<div class="col">`;
     domString += `<h1>${character.name}</h1>`;
