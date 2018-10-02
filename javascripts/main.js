@@ -1,1 +1,7 @@
-import {calculate} from './components/calculator.js';
+import {attachEvents} from './components/characters.js';
+
+const initializeApp = () => {
+    attachEvents ();
+};
+
+initializeApp ();
