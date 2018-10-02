@@ -1,4 +1,5 @@
 import { printToDom } from "../helpers/util.js";
+import { detailsBuilder } from "./detail.js"
 
 const characters = [
     { id: 'character1', name: 'Eddard Stark', house: 'Stark', imgUrl: '../images/ned.jpg' },
@@ -8,13 +9,13 @@ const characters = [
 ];
 
 const characterClick = (e) => {
-    console.log(e.target.closest('.character-card').id);
+    const characterId = (e.target.closest('.character-card').id);
     const currentCharacter =  characters.find(x => x.id === characterId);
-    console.log('currentCharacter', currentCharacter);
+    detailsBuilder(currentCharacter);
 }
 
 const createEvents = () => {
-    const characterCards = document.getElementsByClassName('character.name');
+    const characterCards = document.getElementsByClassName('character-card');
     for(let i = 0; i<characterCards.length; i++){
         characterCards[i].addEventListener('click', characterClick);
     }
@@ -23,7 +24,7 @@ const createEvents = () => {
 const characterBuilder = () => {
     let domString = '';
     characters.forEach((character) => {
-        domString += `<div class="col-2 character-card" id="${character.id}>`
+        domString += `<div class="col-2 character-card" id="${character.id}">`
         domString += `<div class="card">`;
         domString += `<img class="card-img-top" src="${character.imgUrl}" alt="${character.name}">`;
         domString += `<div class="card-body">`;
