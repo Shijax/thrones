@@ -7,10 +7,23 @@ const characters = [
     { id: 'character4', name: 'Arya Stark', house: 'Stark', imgUrl: '../images/arya.jpg' }
 ];
 
+const characterClick = (e) => {
+    console.log(e.target.closest('.character-card').id);
+    const currentCharacter =  characters.find(x => x.id === characterId);
+    console.log('currentCharacter', currentCharacter);
+}
+
+const createEvents = () => {
+    const characterCards = document.getElementsByClassName('character.name');
+    for(let i = 0; i<characterCards.length; i++){
+        characterCards[i].addEventListener('click', characterClick);
+    }
+};
+
 const characterBuilder = () => {
     let domString = '';
     characters.forEach((character) => {
-        domString += `<div class="col-2 character">`
+        domString += `<div class="col-2 character-card" id="${character.id}>`
         domString += `<div class="card">`;
         domString += `<img class="card-img-top" src="${character.imgUrl}" alt="${character.name}">`;
         domString += `<div class="card-body">`;
@@ -20,6 +33,7 @@ const characterBuilder = () => {
         domString += `</div>`;
     });
     printToDom(domString);
+    createEvents();
 };
 
 const attachEvents = () => {
