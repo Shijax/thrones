@@ -46,7 +46,7 @@
 "id": "character8",
 "name": "Jaime Lannister",
 "house": "Lannister",
-"imgUrl": "../images/jamie_lannister.jpg"
+"imgUrl": "../images/jaime_lannister.jpg"
 },
 {
 "id": "character9",
@@ -58,10 +58,10 @@
 "id": "character10",
 "name": "Tyrion Lannister",
 "house": "Lannister",
-"imgUrl": "../images/tyrian_lannister.jpg"
+"imgUrl": "../images/tyrion_lannister.jpg"
 },
 {
-"id": "character10",
+"id": "character11",
 "name": "Joffrey Baratheon",
 "house": "Baratheon",
 "imgUrl": "../images/joffrey_baratheon.jpg"
