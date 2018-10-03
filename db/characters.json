@@ -1,0 +1,69 @@
+{
+"characters": [
+{
+"id": "character1",
+"name": "Eddard Stark",
+"house": "Stark",
+"imgUrl": "../images/ned_stark.jpg"
+},
+{
+"id": "character2",
+"name": "Catelyn Stark",
+"house": "Stark",
+"imgUrl": "../images/catelyn_stark.jpg"
+},
+{
+"id": "character3",
+"name": "Sansa Stark",
+"house": "Stark",
+"imgUrl": "../images/sansa_stark.jpg"
+},
+{
+"id": "character4",
+"name": "Arya Stark",
+"house": "Stark",
+"imgUrl": "../images/arya_stark.jpg"
+},
+{
+"id": "character5",
+"name": "Bran Stark",
+"house": "Stark",
+"imgUrl": "../images/bran_stark.png"
+},
+{
+"id": "character6",
+"name": "John Snow",
+"house": "Stark",
+"imgUrl": "../images/john_snow.png"
+},
+{
+"id": "character7",
+"name": "Tywin Lannister",
+"house": "Lannister",
+"imgUrl": "../images/tywin_lannister.jpg"
+},
+{
+"id": "character8",
+"name": "Jaime Lannister",
+"house": "Lannister",
+"imgUrl": "../images/jamie_lannister.jpg"
+},
+{
+"id": "character9",
+"name": "Cersei Lannister",
+"house": "Lannister",
+"imgUrl": "../images/cersei_lannister.png"
+},
+{
+"id": "character10",
+"name": "Tyrion Lannister",
+"house": "Lannister",
+"imgUrl": "../images/tyrian_lannister.jpg"
+},
+{
+"id": "character10",
+"name": "Joffrey Baratheon",
+"house": "Baratheon",
+"imgUrl": "../images/joffrey_baratheon.jpg"
+}]
+}

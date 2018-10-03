@@ -1,12 +1,7 @@
 import { printToDom } from "../helpers/util.js";
 import { detailsBuilder } from "./detail.js"
 
-const characters = [
-    { id: 'character1', name: 'Eddard Stark', house: 'Stark', imgUrl: '../images/ned.jpg' },
-    { id: 'character2', name: 'Catelyn Stark', house: 'Stark', imgUrl: '../images/catelyn.jpg' },
-    { id: 'character3', name: 'Sansa Stark', house: 'Stark', imgUrl: '../images/sansa.jpg' },
-    { id: 'character4', name: 'Arya Stark', house: 'Stark', imgUrl: '../images/arya.jpg' }
-];
+const characters = [];
 
 const characterClick = (e) => {
     const characterId = (e.target.closest('.character-card').id);
@@ -41,4 +36,4 @@ const attachEvents = () => {
     characterBuilder();
 }
 
-export { attachEvents }
+export { attachEvents, characterBuilder }
